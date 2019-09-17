@@ -1,5 +1,5 @@
 Arguments: 
-  /home/guisedassari/.nvm/versions/node/v10.15.3/bin/node /usr/share/yarn/bin/yarn.js add @babel/plugin-proposal-class-propeties -D
+  /home/guisedassari/.nvm/versions/node/v10.15.3/bin/node /usr/share/yarn/bin/yarn.js add props-types
 
 PATH: 
   /home/guisedassari/.nvm/versions/node/v10.15.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@babel%2fplugin-proposal-class-propeties: Not found
+  Error: https://registry.yarnpkg.com/props-types: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66830:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:140464:22)
       at Request.emit (events.js:189:13)
@@ -38,6 +38,7 @@ npm manifest:
     },
     "devDependencies": {
       "@babel/core": "^7.6.0",
+      "@babel/plugin-proposal-class-properties": "^7.5.5",
       "@babel/preset-env": "^7.6.0",
       "@babel/preset-react": "^7.0.0",
       "babel-loader": "^8.0.6",
@@ -131,6 +132,18 @@ Lockfile:
       "@babel/helper-hoist-variables" "^7.4.4"
       "@babel/traverse" "^7.4.4"
       "@babel/types" "^7.4.4"
+  
+  "@babel/helper-create-class-features-plugin@^7.5.5":
+    version "7.6.0"
+    resolved "https://registry.yarnpkg.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.6.0.tgz#769711acca889be371e9bc2eb68641d55218021f"
+    integrity sha512-O1QWBko4fzGju6VoVvrZg0RROCVifcLxiApnGP3OWfWzvxRZFCoBD81K5ur5e3bVY2Vf/5rIJm8cqPKn8HUJng==
+    dependencies:
+      "@babel/helper-function-name" "^7.1.0"
+      "@babel/helper-member-expression-to-functions" "^7.5.5"
+      "@babel/helper-optimise-call-expression" "^7.0.0"
+      "@babel/helper-plugin-utils" "^7.0.0"
+      "@babel/helper-replace-supers" "^7.5.5"
+      "@babel/helper-split-export-declaration" "^7.4.4"
   
   "@babel/helper-define-map@^7.5.5":
     version "7.5.5"
@@ -294,6 +307,14 @@ Lockfile:
       "@babel/helper-plugin-utils" "^7.0.0"
       "@babel/helper-remap-async-to-generator" "^7.1.0"
       "@babel/plugin-syntax-async-generators" "^7.2.0"
+  
+  "@babel/plugin-proposal-class-properties@^7.5.5":
+    version "7.5.5"
+    resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.5.5.tgz#a974cfae1e37c3110e71f3c6a2e48b8e71958cd4"
+    integrity sha512-AF79FsnWFxjlaosgdi421vmYG6/jg79bVD0dpD44QdgobzHKuLZ6S3vl8la9qIeSwGi8i1fS0O1mfuDAAdo1/A==
+    dependencies:
+      "@babel/helper-create-class-features-plugin" "^7.5.5"
+      "@babel/helper-plugin-utils" "^7.0.0"
   
   "@babel/plugin-proposal-dynamic-import@^7.5.0":
     version "7.5.0"
